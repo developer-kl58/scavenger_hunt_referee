@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scavenger Hunt Referee</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        
+    </head>
+    <body onload="displayHomeMessage()">
+        <div id="main">
+            <h1 id="clue-word">hi</h1>
+            <h2 id="timer"></h2>
+        </div>
+        <div id="point-table">
+            <h6 id="points"></h6>
+        </div>
+        <div id="winner-div">
+            <h1 id="winner"></h1>
+        </div>
+        
+        <button id="next-button" onclick="displayNextClue()" class="button-40" role="button">Next Round</button>
+        <button id="announce-button" onclick="announceRoundWinner()" class="button-40" role="button">Announce Winner</button>
+        <button id="timer-button" onclick="startTimer()" class="button-40" role="button">Start</button>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
